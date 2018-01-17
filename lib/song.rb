@@ -18,7 +18,6 @@ class Song
       # through class method @Song.all
     # return the song instance
 
-    #self.all << self.new
     self.new.save
     self.all.last
   end
