@@ -47,10 +47,8 @@ class Song
     #class finder
     # input: string name
     # output: matching instance
-    self.all.each do |song|
-      return song if song.name == name
-    end
-    return nil
+    self.all.detect {|song| song.name == name}
+  
   end
 
   def self.find_or_create_by_name(name)
